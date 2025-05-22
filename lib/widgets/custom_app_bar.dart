@@ -8,12 +8,12 @@ class CustomAppBar extends StatelessWidget {
   final VoidCallback onBookmarkPressed;
 
   const CustomAppBar({
-    Key? key,
+    super.key,
     required this.title,
     required this.isBookmarked,
     required this.onBackPressed,
     required this.onBookmarkPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

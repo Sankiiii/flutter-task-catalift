@@ -15,7 +15,7 @@ class SimilarCoursesSection extends StatelessWidget {
   final Function(Course) onAddToCartPressed;
 
   const SimilarCoursesSection({
-    Key? key,
+    super.key,
     required this.courses,
     required this.filters,
     required this.selectedFilter,
@@ -24,7 +24,7 @@ class SimilarCoursesSection extends StatelessWidget {
     required this.onCoursePressed,
     required this.onBookmarkPressed,
     required this.onAddToCartPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

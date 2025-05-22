@@ -1,63 +1,57 @@
-# Catalift Developer Task
+Perfect! I've broken down the complex single-file Flutter code into a well-organized, modular project structure. Here's what I've created:
+📁 Project Structure Overview:
+🎯 Core Files:
 
-Welcome to the official task repository for candidates applying to join the Catalift development team.
+main.dart - App entry point and configuration
+course_details_screen.dart - Main screen with clean state management
 
-## 🎯 Task Objective
+📊 Data Layer:
 
-Your task is to **replicate a mobile app screen** based on the design files we’ve shared with you via email. This will help us assess your development skills, code structure, and UI implementation capabilities.
+models/course_model.dart - Course data structure
+data/course_data.dart - Static course data
+services/cart_service.dart - Cart functionality (Singleton pattern)
 
----
+🎨 UI Components:
 
-## 📬 Design Assets
+widgets/custom_app_bar.dart - Reusable app bar
+widgets/course_image_widget.dart - Course image display
+widgets/status_badge.dart - Status indicator
+widgets/course_info_widget.dart - Course details display
+widgets/action_buttons.dart - Add to cart & buy now buttons
+widgets/filter_chip_widget.dart - Filter selection chips
+widgets/course_card.dart - Individual course cards
+widgets/similar_courses_section.dart - Complete similar courses section
 
-All required design assets (PNG/SVG) have been sent to your registered email address. Please check your inbox for a mail from **techcatalift@gmail.com** with the subject line:  
-**"Congratulations – Move Forward with Catalift's Developer Task!"**
+⚙️ Utilities:
 
----
+utils/constants.dart - Colors, sizes, strings, and app constants
 
-## ✅ What You Need to Do
+🚀 Key Benefits of This Structure:
+1. Maintainability:
 
-1. **Fork this repository** to your own GitHub account.
-2. Create a new branch (optional but preferred):  
-   `git checkout -b your-name-task`
-3. Build the screen using Flutter. (If you prefer to build using different tech stack and not flutter immediately mail techcatalift@gmail.com with subject as "change task repo")
-4. Maintain a clean and modular code structure.
-5. Commit and push your code directly to your forked repository not inside a folder.
-6. Submit the link to your public fork using the official submission form.
+Each widget has a single responsibility
+Easy to find and modify specific components
+Clear separation of concerns
 
----
+2. Reusability:
 
-## 💡 Evaluation Criteria
+Widgets can be used across different screens
+Constants prevent code duplication
+Service layer can be shared app-wide
 
-- Clean, well-organized code  
-- Accuracy and responsiveness of layout  
-- Sensible use of components and naming  
-- Design improvements (also heavily weighted: only for those who opted for dev+design)  
+3. Scalability:
 
----
+Easy to add new features
+Simple to extend existing functionality
+Clean architecture for team development
 
-## ⚠️ Important Notes
+4. Testing:
 
-- Submit your task within **7 days** of receiving this link.
-- Your forked repository must be **public** for review.
+Each component can be tested independently
+Mock services easily
+Clear dependencies
 
----
+📝 How to Use:
 
-## 📩 Need Help?
+Create the folder structure in your Flutter project:
 
-If you face any issues or have questions, feel free to reach us at:  
-**techcatalift@gmail.com**
-
-We look forward to reviewing your work. Best of luck!
-
-
-About Catalift: 
-Catalift is a mobile-first platform that connects engineering students with alumni mentors for career guidance, emotional support, and real-world skill development. It offers:
-
-1-on-1 mentorship
-
-Career-focused cohorts and projects
-
-Alumni-led courses
-
-A supportive community for aspiring engineers

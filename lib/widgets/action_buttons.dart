@@ -7,11 +7,11 @@ class ActionButtons extends StatelessWidget {
   final VoidCallback onBuyNow;
 
   const ActionButtons({
-    Key? key,
+    super.key,
     required this.isAddedToCart,
     required this.onAddToCart,
     required this.onBuyNow,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

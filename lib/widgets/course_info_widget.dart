@@ -5,7 +5,7 @@ import 'package:courses_app/utils/constants.dart';
 class CourseInfoWidget extends StatelessWidget {
   final Course course;
 
-  const CourseInfoWidget({Key? key, required this.course}) : super(key: key);
+  const CourseInfoWidget({super.key, required this.course});
 
   @override
   Widget build(BuildContext context) {

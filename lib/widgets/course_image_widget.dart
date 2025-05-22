@@ -6,10 +6,10 @@ class CourseImageWidget extends StatelessWidget {
   final double height;
 
   const CourseImageWidget({
-    Key? key,
+    super.key,
     required this.icon,
     this.height = 200,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -7,11 +7,11 @@ class StatusBadge extends StatelessWidget {
   final Color textColor;
 
   const StatusBadge({
-    Key? key,
+    super.key,
     required this.text,
     this.backgroundColor = AppColors.secondary,
     this.textColor = AppColors.success,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

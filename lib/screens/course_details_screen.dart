@@ -11,7 +11,7 @@ import 'package:courses_app/widgets/action_buttons.dart';
 import 'package:courses_app/widgets/similar_courses_section.dart';
 
 class CourseDetailsScreen extends StatefulWidget {
-  const CourseDetailsScreen({Key? key}) : super(key: key);
+  const CourseDetailsScreen({super.key});
 
   @override
   State<CourseDetailsScreen> createState() => _CourseDetailsScreenState();

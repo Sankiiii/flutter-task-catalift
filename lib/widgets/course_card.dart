@@ -9,12 +9,12 @@ class CourseCard extends StatelessWidget {
   final VoidCallback onAddToCart;
 
   const CourseCard({
-    Key? key,
+    super.key,
     required this.course,
     required this.onTap,
     required this.onBookmarkTap,
     required this.onAddToCart,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
